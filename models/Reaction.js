@@ -7,13 +7,13 @@ const userSchema = new Schema(
        type: String,
       unique: true,
       require: true,
-      trimmed: true
+      trim: true
       },
        email:
       { type: String,
         require: true,
         unique: true,
-        match: [/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, 'Please fill a valid email address']
+        match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'Please use a valid email address']
 
       },
       thoughts:[
@@ -46,5 +46,6 @@ const userSchema = new Schema(
       return this.friends.length;
     })
     
+const User = model ('user',userSchema);    
 
 module.exports = User;
