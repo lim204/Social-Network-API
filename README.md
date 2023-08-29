@@ -6,7 +6,6 @@ The main purpose of this challenge is to create an API for a social network web 
 
 
 ## Table of Contents
-
 - [Description](#description)
 - [Technology](#Technology)
 - [Installation](#installation)
