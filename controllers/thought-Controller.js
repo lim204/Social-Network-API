@@ -59,7 +59,7 @@ const thoughtController = {
 
     res.json(dbThoughtData);
 
-    console.log(err);
+    // console.log(err);
     res.status(500).json(err);
   },
   // delete thought
