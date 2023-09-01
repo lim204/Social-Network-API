@@ -19,7 +19,7 @@ const thoughtController = {
       const dbThoughtData = await Thought.findOne({ _id: req.params.thoughtId });
 
       if (!dbThoughtData) {
-        return res.status(404).json({ message: 'No thought with this id!' });
+        return res.status(404).json({ message: 'No thought with that Id!' });
       }
 
       res.json(dbThoughtData);
@@ -54,7 +54,8 @@ const thoughtController = {
     const dbThoughtData = await Thought.findOneAndUpdate({ _id: req.params.thoughtId }, { $set: req.body }, { runValidators: true, new: true });
 
     if (!dbThoughtData) {
-      return res.status(404).json({ message: 'No thought with this id!' });
+      return res.status(404).json
+      ({ message: 'No thought with that Id!'});
     }
 
     res.json(dbThoughtData);
@@ -68,7 +69,7 @@ const thoughtController = {
       const dbThoughtData = await Thought.findOneAndRemove({ _id: req.params.thoughtId })
 
       if (!dbThoughtData) {
-        return res.status(404).json({ message: 'No thought with this id!' });
+        return res.status(404).json({ message: 'No thought with that Id!'});
       }
 
       // remove thought id from user's `thoughts` field
@@ -79,7 +80,7 @@ const thoughtController = {
       );
 
       if (!dbUserData) {
-        return res.status(404).json({ message: 'Thought created but no user with this id!' });
+        return res.status(404).json({ message: 'Thought created but no user with this id!'});
       }
 
       res.json({ message: 'Thought successfully deleted!' });
@@ -99,7 +100,7 @@ const thoughtController = {
       );
 
       if (!dbThoughtData) {
-        return res.status(404).json({ message: 'No thought with this id!' });
+        return res.status(404).json({ message: 'No thought with that Id!'});
       }
 
       res.json(dbThoughtData);
@@ -118,7 +119,7 @@ const thoughtController = {
       );
 
       if (!dbThoughtData) {
-        return res.status(404).json({ message: 'No thought with this id!' });
+        return res.status(404).json({ message: 'No thought with that Id!' });
       }
 
       res.json(dbThoughtData);
