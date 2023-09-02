@@ -4,10 +4,10 @@ const userController = {
   // get all users
   async getUsers(req, res) {
     try {
-      const dbUserData = await User.find()
+      const dbUsersData = await User.find()
         .select('-__v')
 
-      res.json(dbUserData);
+      res.json(dbUsersData);
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -28,7 +28,7 @@ const userController = {
       res.json(dbUserData);
     } catch (err) {
       console.log(err);
-      res.status(500).json(err);
+      return res.status(500).json(err);
     }
   },
   // create a new user

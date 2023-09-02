@@ -1,5 +1,5 @@
-const addDateSuffix = (data) =>{
-    let dateStr = date.toString ();
+const addDateSuffix = (date) =>{
+    let dateStr = date.toString();
 
     const lastChar = dateStr.charAt(dateStr.length -1);
 
@@ -19,7 +19,7 @@ const addDateSuffix = (data) =>{
 module.exports = (
     timestamp,
     { monthLength = 'short', dateSuffix = true } = {}
-  ) => {
+) => {
     // create month object
     const months = {
       0: monthLength === 'short' ? 'Jan' : 'January',
@@ -62,5 +62,5 @@ module.exports = (
     const formattedTimeStamp = `${formattedMonth} ${dayOfMonth}, ${year} at ${hour}:${minutes} ${periodOfDay}`;
   
     return formattedTimeStamp;
-  };
+};
   

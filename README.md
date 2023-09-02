@@ -34,3 +34,12 @@ After installing npm packages, the application will be invoked by using the foll
 ```
 npm start
 ```
+
+## Walkthrough videos
+[ Click here to see how to start applicarion's server, get all users, and get all thoughts](https://drive.google.com/file/d/14F6Zf6CG9KC3US5buLsykPoJu4mUVe19/view)
+
+[Click here to see how to get user and thoughts by Id](https://drive.google.com/file/d/1suxY-9ZzCPZVL5nhH5Gsgk9_v60WHD18/view)
+
+[Click here to see how to post,put,and delete user](https://drive.google.com/file/d/19-bzc7TygvPiu9BFyhQnHos6nvlKqngp/view)
+
+[Click here to see how to post,put thought](https://drive.google.com/file/d/1a-vXAAOpoHzuBz1ChSDjTpSh2XZKSSFr/view)
