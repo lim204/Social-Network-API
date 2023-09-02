@@ -10,6 +10,7 @@ The main purpose of this challenge is to create an API for a social network web 
 - [Technology](#Technology)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#Credits)
 
 ## Technology:
 
@@ -42,4 +43,8 @@ npm start
 
 [Click here to see how to post,put,and delete user](https://drive.google.com/file/d/19-bzc7TygvPiu9BFyhQnHos6nvlKqngp/view)
 
-[Click here to see how to post,put thought](https://drive.google.com/file/d/1a-vXAAOpoHzuBz1ChSDjTpSh2XZKSSFr/view)
+[Click here to see how to post,put thought](https://drive.google.com/file/d/19FmyiQ94zChHkifwiizk7ZwO0--vnted/view)
+
+## Credit:
+
+* UCLA EDX BOOTCAMP
